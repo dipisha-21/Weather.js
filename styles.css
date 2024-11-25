@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQA7QMBIgACEQEDEQH/xAAaAAEBAQEBAQEAAAAAAAAAAAAAAQIDBQcE/8QAGhABAQEBAQEBAAAAAAAAAAAAABEBEgIxIf/EABgBAQEBAQEAAAAAAAAAAAAAAAABAgME/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oADAMBAAIRAxEAPwD63URK5PY0M0oNDNAapWQFEBVEAUSlBSogY1UQFUQBRAAQBRAFEAawQoKINMqIJBRBYKMhBRFQAQFEBVEAAABAKogRaogFUQCqIEFAIBqFbZBAFpUAWiAKIAogCiBBRA3BRBIKIEFECCiBCqIEFEXCAqBBKiVK6RFECCiUpBRKEFECCiKkFzVrOKQWlZCDVEWpAClIAUpADAgAEKAEKoikK40rFK7RG6VilIrdKxSkG6tc6ZpEdKVilIN0zWKVIOlKxmlIN0rNKkG6M0pBoTNKRGhmrUgpUKQWlShBaVAg1ghSD8lTpz6K7Rp06OnKlIOtK59FWDrSuVWpB0q1y6KQdrhXLpeiDr0dOdKkHXpa5VeiDpTNYpSI6Va55pUg6UrFKQdKVjNKkRulZpSDVM1mrSDWatYpSDz6m651N13jTpVz041c9EHXorl0Ug656Xpyq9IOnS9OXS9EHWr05dHRB16XNcs9LnpIjr0tcqtIOtWuXRmkK65q1zzTpIV1pXOlRHWlc6tIN1a50pB0pmsUpB0q1zzSkHmdJusVN11adKZrnSg60rnSkHTpa5VaQdM1a506IjrSudXNIOmaua55q5qQrpWq50qI6Vc1zzVzQdM1axmrQaq1iqDdKxmrUiN0rNKDdM1imaDpmlYq0HlUrNSurTdKxSg3VrBQbpmsVaDdKwtB0q5rnVzUHSmaxVzRHTNX9YzVqQbq5rFXCDeatYzVqI6UrKUG81axmrmoNVayA1Ss0oN1axig8vfjIOrQACgAvxUAXFBAawBFXAQWtAC4oILmqAi4oIFUAWiAiqgguKAP/9k=);
+    background-size:cover;
+}
+
+.weatherContainer {
+    margin: 2rem;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(252, 221, 249);
+    background-blend-mode: color-burn;
+    opacity: 0.7;
+    box-shadow: 0px 0px 19px 0px #050119;
+}
+#weatherForm input {
+    border: none;
+    color: rgb(0, 0, 0);
+    outline: none;
+    font-size: 1rem;
+    font-family: sans-serif;
+    background: transparent;
+}
+
+#weatherForm ul li {
+    list-style: none;
+}
+
+.searchBtn {
+    background: transparent;
+    border: none;
+}
+
+.searchBtn ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#weatherForm {
+    display: flex;
+    justify-content: space-around;
+}
+
+.appHeading {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#city {
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.weatherContainer img {
+    width: 50%;
+}
+
+#temp {
+    word-spacing: -8px;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#temp sup {
+    font-size: 1.8rem;
+}
+
+.weatherMain {
+    font-family: sans-serif;
+}
+
+#todayTime,
+.todayDates {
+    font-family: sans-serif;
+    line-height: 2rem;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-space-around {
+    justify-content: space-around;
+}
+
+.justify-space-center {
+    justify-content: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.f-col {
+    flex-direction: column;
+}
+@media screen and (max-width: 307px) {
+    #weatherForm {
+        flex-direction: column;
+    }
+
+    #weatherForm input {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
